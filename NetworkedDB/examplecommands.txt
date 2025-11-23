@@ -1,0 +1,8 @@
+# Make windows executable
+cargo build --target x86_64-pc-windows-gnu
+
+# Make linux debug executable
+cargo build
+
+# Make linux release executable
+cargo build --release
