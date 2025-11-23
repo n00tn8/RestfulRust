@@ -1,0 +1,8 @@
+- Make Class diagram / Design architecture in VP
+- Make scripts for building the following:
+    - automated test report
+    - linux executable
+    - windows executable
+- Make simple client and server in Rust, according to PythonExample
+- Verify and compare program efficiency for Rust and Python, on Linux and Windows
+
