@@ -16,7 +16,6 @@ fn convert_prefixes(prefix: &str) -> f64 {
 
 // Simplify fully written SI names to abbreviations
 pub fn simplify_input(input: &str) -> String {
-    println!("Asked to simplify input of {}.",input);
     let temp = str::replace(&input, "Hertz","Hz");
     let temp = str::replace(&temp, "meter","m");
     let temp = str::replace(&temp, "gram","g");
@@ -50,7 +49,6 @@ pub fn convert_units(value: f64, from_unit: &str, to_unit: &str) -> f64 {
     // TODO allow other easy units, more generally
     if from_unit[second_to_last_from..] == *"Hz" && to_unit[second_to_last_to..] == *"Hz"{
         
-        println!("Recognised that Hz and Hz were present");
         if from_unit.len() == si_unit_length {
             return value / convert_prefixes(&to_unit[..second_to_last_to]);
 
